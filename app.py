@@ -12,8 +12,6 @@ db.init_app(app)
 
 
 @app.route('/')
-def getCompanyName():
-    return render_template('companyInput.html')
 def index():
     return render_template('index.html')
 
@@ -43,11 +41,17 @@ def about():
 def login():
     return render_template('login.html')
 
+@app.route('/addNewCompany')
+def getCompanyName():
+    return render_template('companyInput.html')
+
 @app.route('/result',methods = ['POST', 'GET'])
 def displayCompany():
     if request.method == 'POST':
+        print("got your shit")
         result = request.form
-
+        print(result)
+        backend.addCompany(result['Name'], result['About'])
         return " ".join(str(x) for x in backend.getCompany())
 
 if __name__ == '__main__':
