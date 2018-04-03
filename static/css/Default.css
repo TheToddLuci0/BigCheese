@@ -27,7 +27,7 @@ a.button {
 }
 
 .body {
-    background-image: url("resources/bg.png");
+    background-image: url(/static/images/bg.png);
     background-repeat: repeat;
 }
 
