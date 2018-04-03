@@ -23,7 +23,7 @@ def employer(name):
 
 @app.route('/employers/')
 def employers():
-    return render_template('employers.html')
+    return render_template('employers.html', result=backend.getCompany())
 
 
 @app.route('/user/')
