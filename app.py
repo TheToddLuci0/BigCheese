@@ -1,6 +1,14 @@
-from flask import Flask, render_template
+from flask import Flask,  render_template, request
+from flask_sqlalchemy import SQLAlchemy
+import backend
+
+
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:steve@localhost/theCellar'
+db = SQLAlchemy(app)
+db.init_app(app)
 
 
 @app.route('/')
@@ -33,6 +41,18 @@ def about():
 def login():
     return render_template('login.html')
 
+@app.route('/addNewCompany')
+def getCompanyName():
+    return render_template('companyInput.html')
+
+@app.route('/result',methods = ['POST', 'GET'])
+def displayCompany():
+    if request.method == 'POST':
+        print("got your shit")
+        result = request.form
+        print(result)
+        backend.addCompany(result['Name'], result['About'])
+        return " ".join(str(x) for x in backend.getCompany())
 
 if __name__ == '__main__':
     app.run()
