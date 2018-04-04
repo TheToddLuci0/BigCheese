@@ -4,7 +4,7 @@ def connect():
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
 
 def getCompany():
-    string[0][0]# = list()
+    string = list()
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
     cur = conn.cursor()
     cur.execute("SELECT * FROM company")
