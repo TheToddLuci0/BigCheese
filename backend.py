@@ -1,11 +1,11 @@
 import psycopg2
 
 def connect():
-    conn = psycopg2.connect("dbname=theCellar user=postgres")
+    conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
 
 def getCompany():
     string = list()
-    conn = psycopg2.connect("dbname=theCellar user=postgres")
+    conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
     cur = conn.cursor()
     cur.execute("SELECT * FROM company")
     output = cur.fetchall()
@@ -14,7 +14,7 @@ def getCompany():
     return string
 
 def addCompany(companyName, about):
-    conn = psycopg2.connect("dbname=theCellar user=postgres pass=steve")
+    conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
     cur = conn.cursor()
     print(companyName, about)
     sql = "INSERT INTO COMPANY (NAME,ABOUT,RATE,NUM_RATE) VALUES (%s,%s,%s,%s);"
