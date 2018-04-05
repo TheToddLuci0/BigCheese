@@ -1,61 +1,93 @@
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/static/css/Default.css">
-    </link>
-    <title>
-        {% block title %}
-        Big Cheese Review
-        {% endblock %}
-    </title>
-    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% import "bootstrap/google.html" as google %}
+
+{% block html_attribs %} lang="en"{% endblock %}
+{% block metas %}
+{{ super() }}
+{% endblock %}
+{% block head %}
+{% block title %}Big Cheese Review{% endblock %}
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>(adsbygoogle = window.adsbygoogle || []).push({
         google_ad_client: "ca-pub-7403507368396775",
         enable_page_level_ads: true
     });</script>
-</head>
-<body class="body">
-<div id="container">
-    <div>
-        <ul>
-            <li><a class="active" href="{{ url_for('index') }}">Home</a></li>
+    {{ super() }}
+    {% block styles %}
+        {{ super() }}
+        <link href="/static/css/custom.css" rel="stylesheet">
+        <link href="/Lib/flask_bootstrap/static/css/bootstrap.css" rel="stylesheet">
+{% endblock %}
+{% endblock %}
+<div class="container-fluid">
+{% block navbar %}
+<nav class="navbar navbar-default">
+        {# <ul>
+            <li><a {# class="homeButton"  href="{{ url_for('index') }}">Home</a></li>
             <li><a href="{{ url_for('about') }}">About</a></li>
             <li><a href="{{ url_for('employers') }}">Employers</a></li>
-            <li class="login"><a href="{{ url_for('login') }}">Login</a></li>
-        </ul>
+            <li {# class="login"  ><a href="{{ url_for('login') }}">Login</a></li>
+        </ul>  #}
+<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ url_for('index') }}">Home</a>
     </div>
-    <div>
-        <table>
-            <tr>
-                <td height="50"></td>
-            </tr>
-        </table>
-    </div>
-    <div id="content">
 
-
-        {% block content %}
-
-            <h1 align="center">If you can see this, the devs gone done messed up.</h1>
-
-        {% endblock %}
-
-    </div>
-    <footer id="footer">
-        <table style="width:95%" align="center">
-            <tr align="center">
-                <td style="width:25%"></td>
-                <td style="width:40%" opacity="1">Developed by Logan Woolery and William Rickert</td>
-                <td style="width:25%" align="right"></td>
-            </tr>
-            <tr align="center">
-                <td style="width:30%"></td>
-                <td style="width:30%">All rights reserved.</td>
-                <td align="right" style="width:30%"></td>
-            </tr>
-        </table>
-    </footer>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+    </nav>
+{% endblock %}
+{% block content %}
+{{ super() }}
+    <h1>If you can see this, the devs messed up.</h1>
+{% endblock %}
 </div>
-</body>
-</html>
-</html>
+{% block scripte %}
+{{ super() }}
+{% endblock %}
