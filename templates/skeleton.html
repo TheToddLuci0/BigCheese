@@ -4,6 +4,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116985357-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-116985357-1');
+    </script>
     <meta name="description" content="">
     <meta name="author" content="Logan Woolery">
     <link rel="icon" href="/static/images/favicon.ico">
@@ -46,13 +58,14 @@
                 <li><a href="{{ url_for('about') }}">About</a></li>
                 {# <li><a href="{{ url_for('employers') }}">Employers</a></li> #}
                 <li class="dropdown">
-                <a href="{{ url_for('employers') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="{{ url_for('employers') }}">View Employers</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="{{ url_for('getCompanyName') }}">Add an Employer</a></li>
-                </ul>
-              </li>
+                    <a href="{{ url_for('employers') }}" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">Employers <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ url_for('employers') }}">View Employers</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="{{ url_for('getCompanyName') }}">Add an Employer</a></li>
+                    </ul>
+                </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="{{ url_for('login') }}">Login</a></li>
