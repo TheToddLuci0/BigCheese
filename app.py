@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 import backend
 from flask_bootstrap import Bootstrap
 
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:steve@localhost/theCellar'
