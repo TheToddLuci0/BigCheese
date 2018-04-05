@@ -1,16 +1,29 @@
 {% extends "skeleton.html" %}
 {% block content %}
-      <a href="http://www.bigcheese.review/addNewCompany">Add a new company</a>
-      <table border = 1>
-         {% for item in result %}
-
+    <h1 class="h1" align="center">Here's all the employers we have</h1>
+    <h3 align="center">Just click one to see more details.</h3>
+    <div class="col-lg">
+        <table class="table table-striped">
+            <thead>
             <tr>
-                <th> {{ item[0] }}  </th>
-                 <td> {{ item[1] }} </td>
+                <th>First Thing</th>
+                <th>Next</th>
+                <th>Fix this</th>
+                <th>@Wrickert</th>
             </tr>
+            </thead>
+            <tbody>
+            {% for item in result %}
 
-         {% endfor %}
-      </table>
+                <tr href="{{ url_for('employer') }}">
+                    <th> {{ item[0] }}  </th>
+                    <td> {{ item[1] }} </td>
+                </tr>
 
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <p>Are we missing someone? Click <a href="http://www.bigcheese.review/addNewCompany">here</a> to add them!</p>
 
 {% endblock %}

@@ -27,6 +27,10 @@ def employers():
 
 
 @app.route('/user/')
+def user():
+    return render_template('userProfile.html')
+
+
 @app.route('/user/<username>')
 def profile(username):
     return render_template('userProfile.html', username=username)
@@ -35,6 +39,11 @@ def profile(username):
 @app.route('/about/')
 def about():
     return render_template('about.html')
+
+
+@app.route('/test/')
+def test():
+    return render_template('test.html')
 
 
 @app.route('/login/')
