@@ -24,10 +24,10 @@ def employer(name):
 @app.route('/employers/', methods=['POST', 'GET'])
 def employers():
     if request.method == 'POST':
-    print("got your shit")
-    result = request.form
-    print(result)
-    backend.addCompany(result['Name'], result['About'])
+        print("got your shit")
+        result = request.form
+        print(result)
+        backend.addCompany(result['Name'], result['About'])
     return render_template('employers.html', result=backend.getCompany())
 
 
@@ -63,8 +63,7 @@ def getCompanyName():
 
 @app.route('/result', methods=['POST', 'GET'])
 def displayCompany():
-d
-
+    return "Why are you here"
 
 if __name__ == '__main__':
     app.run()
