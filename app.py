@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask.ext.login import (LoginManager, current_user, login_required,
-                            login_user, logout_user, UserMixin, AnonymousUser,
+                            login_user, logout_user, UserMixin,
                             confirm_login, fresh_login_required)
 from flask_sqlalchemy import SQLAlchemy
 import backend
@@ -23,9 +23,6 @@ class User(UserMixin):
 
     def is_active(self):
         return self.active
-
-class Anonymous(AnonymousUser):
-    name = u"Anonymous"
 
 
 
