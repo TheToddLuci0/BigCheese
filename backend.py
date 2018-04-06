@@ -57,7 +57,7 @@ def addReview(companyName, review, score, username):
     # add review
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
     cur = conn.cursor()
-    sql = "INSERT INTO REVIEW (CNAME,REVIEW,SCORE,UNAME) VALUES ({},{},{},{})".format(companyName, review, score, username)
+    sql = "INSERT INTO REVIEW (CNAME,REVIEW,SCORE,UNAME) VALUES ('{}','{}',{},'{}')".format(companyName, review, score, username)
     print("sql statement: {}".format(sql))
     cur.execute(sql)
     conn.commit()
