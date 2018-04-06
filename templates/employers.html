@@ -6,17 +6,19 @@
         <table class="table table-striped">
             <thead>
             <tr>
-                <th>First Thing</th>
-                <th>Next</th>
-                <th>Fix this</th>
-                <th>@Wrickert</th>
+                <th>Company Name</th>
+                <th>About</th>
+                <th>Average Rating</th>
+                <th>Number of Reviews</th>
             </tr>
             </thead>
             <tbody>
             {% for item in result %}
 
-                    <th> {{ item[0] }}  </th>
+                <a> <a href="www.bigcheese.review/employers/{{ item[0] }}" {{ item[0] }}</a>  </th>
                     <td> {{ item[1] }} </td>
+                    <td> {{ item[2] }}</td>
+                    <td> {{ item[3] }}</td>
                 </tr>
 
             {% endfor %}

@@ -1,4 +1,7 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for, flash
+from flask.ext.login import (LoginManager, current_user, login_required,
+                            login_user, logout_user, UserMixin, AnonymousUser,
+                            confirm_login, fresh_login_required)
 from flask_sqlalchemy import SQLAlchemy
 import backend
 from flask_bootstrap import Bootstrap
@@ -11,12 +14,32 @@ db.init_app(app)
 Bootstrap(app)
 
 
+class User(UserMixin):
+    def __init__(self, name, id, active=True):
+        self.name = name
+        self.id = id
+        self.active = active
+
+    def is_active(self):
+        return self.active
+
+class Anonymous(AnonymousUser):
+    name = u"Anonymous"
+
+
+
+
+
+
+
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
 
 
-@app.route('/employer/<name>')
+@app.route('/employer/<name>', methods=['POST', 'GET']))
 def employer(name):
     return render_template('employer.html', name=name)
 
@@ -61,9 +84,6 @@ def getCompanyName():
     return render_template('companyInput.html')
 
 
-@app.route('/result', methods=['POST', 'GET'])
-def displayCompany():
-    return "Why are you here"
 
 if __name__ == '__main__':
     app.run()
