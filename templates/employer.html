@@ -12,13 +12,13 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
             {% for item in reviews %}
+                <tr>
                 <td> {{ item[1] }} </td>
                 <td> {{ item[2] }} </td>
                 <td> {{ item[3] }} </td>
+                </tr>
             {% endfor %}
-            </tr>
             </tbody>
         </table>
     </div>
