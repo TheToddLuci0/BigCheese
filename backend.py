@@ -66,7 +66,7 @@ def addReview(companyName, review, score, username):
     # update company
     newScore = ( ((current[0][2] * current[0][3]) + score) / (current[0][3] + 1))
     cur = conn.cursor()
-    update = "UPDATE COMPANY SET RATE = {}, NUM_RATE = {} WHERE NAME = {}".format(newScore, (current[0][3] + 1), companyName)
+    update = "UPDATE COMPANY SET RATE = {}, NUM_RATE = {} WHERE NAME = '{}'".format(newScore, (current[0][3] + 1), companyName)
     print("update statement: {}".format(update))
     cur.execute(update)
     conn.commit()
