@@ -37,9 +37,16 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/employer/<name>')
+@app.route('/employer/<name>', methods=['POST', 'GET'])
 def employer(name):
+    if request.method == 'POST':
+        result = request.form
+        backend.addReview(name, result['Review'], result['Score'], "ThatOneJerk")
     return render_template('employer.html', name=name, reviews=backend.getReviews(name))
+
+@app.route('/addReview/<name>')
+def addReview(name):
+    return render_template('addReview.html', name=name)
 
 
 @app.route('/employers/', methods=['POST', 'GET'])
