@@ -105,8 +105,6 @@ def addCompany(companyName, about):
 
     return True
 
-def addReview(companyName, review, score, username):
-    current = getReviews()
 
 def getReviews(companyName):
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
