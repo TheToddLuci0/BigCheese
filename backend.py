@@ -78,6 +78,7 @@ def getReviews(companyName):
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
     cur = conn.cursor()
     command = "SELECT * FROM REVIEW WHERE CNAME = '{}';".format(companyName)
+    print(command)
     cur.execute(command)
     reviews = cur.fetchall()
     return reviews
