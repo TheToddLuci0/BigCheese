@@ -57,7 +57,7 @@ def addReview(companyName, review, score, username):
     # add review
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
     cur = conn.cursor()
-    sql = "INSERT INTO REVIEW (CNAME,REVIEW,SCORE,UNAME) VALUES ({},{},{},{})".format(companyName,review,score,username)
+    sql = "INSERT INTO REVIEW (CNAME,REVIEW,SCORE,UNAME) VALUES ({},{},{},{})".format(companyName, review, score, username)
     print("sql statement: {}".format(sql))
     cur.execute(sql)
     conn.commit()
@@ -66,7 +66,7 @@ def addReview(companyName, review, score, username):
     # update company
     newScore = ( ((current[2] * current[3]) + score) / (current[3] + 1))
     cur = conn.cursor()
-    update = "UPDATE COMPANY SET RATE = {}, NUM_RATE = {} WHERE NAME = {}".format(newScore, (current[3] +1), companyName)
+    update = "UPDATE COMPANY SET RATE = {}, NUM_RATE = {} WHERE NAME = {}".format(newScore, (current[3] + 1), companyName)
     print("update statement: {}".format(update))
     cur.execute(update)
     conn.commit()
