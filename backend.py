@@ -39,3 +39,12 @@ def addCompany(companyName, about):
     conn.close()
 
     return True
+
+def getReviews(companyName):
+    conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
+    cur = conn.cursor()
+    command = "SELECT * FROM REVIEW WHERE CNAME = ''{}';'".format(companyName)
+    cur.execute(command)
+    reviews = cur.fetchall()
+    return reviews
+

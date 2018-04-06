@@ -39,7 +39,7 @@ def index():
 
 @app.route('/employer/<name>')
 def employer(name):
-    return render_template('employer.html', name=name)
+    return render_template('employer.html', name=name, reviews=backend.getReviews(name))
 
 
 @app.route('/employers/', methods=['POST', 'GET'])
@@ -48,7 +48,11 @@ def employers():
         print("got your shit")
         result = request.form
         print(result)
-        backend.addCompany(result['Name'], result['About'])
+        success = backend.addCompany(result['Name'], result['About'])
+        if success:
+            return render_template('employers.html', result=backend.getCompany())
+        else:
+            return render_template('error.html', name=result['Name'])
     return render_template('employers.html', result=backend.getCompany())
 
 
