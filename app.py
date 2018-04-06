@@ -40,7 +40,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/employer/<name>', methods=['POST', 'GET']))
+@app.route('/employer/<name>')
 def employer(name):
     return render_template('employer.html', name=name)
 
