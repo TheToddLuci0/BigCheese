@@ -42,8 +42,8 @@ def employer(name):
     if request.method == 'POST':
         result = request.form
         backend.addReview(result['name'], result['Review'], result['Score'], "ThatOneJerk")
-    #return render_template('employer.html', name=name, reviews=backend.getReviews(name))
-    return render_template('employers.html', result=backend.getCompany())
+        return render_template('employers.html', result=backend.getCompany())
+    return render_template('employer.html', name=name, reviews=backend.getReviews(name))
 
 @app.route('/addReview/<name>')
 def addReview(name):
