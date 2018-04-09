@@ -156,8 +156,10 @@ def checkPassword(email, password):
     cur.close()
     conn.close()
 
-    print("User: {} Psql: {}".format(password, correctPass))
-    if password == correctPass:
+    print("User: {} Psql: {}".format(password[0], correctPass))
+    if password[0] == correctPass:
+        print("And all is right with the world")
         return True
     else:
+        print('All is dispair once again')
         return False
