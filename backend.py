@@ -139,7 +139,7 @@ def checkPassword(email, password):
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
     cur = conn.cursor()
 
-    check = "SELECT EXISTS (SELECT 1 FROM USERS WHERE UNAME = '{}');".format(userName)
+    check = "SELECT EXISTS (SELECT 1 FROM USERS WHERE UNAME = '{}');".format(email)
     cur.execute(check)
     result = cur.fetchone()[0]
 
