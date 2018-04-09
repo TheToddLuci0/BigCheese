@@ -81,7 +81,7 @@ def user():
 @app.route('/user/<display_name>', methods=['POST', 'GET'])
 def profile(display_name):
     if request.method == 'POST':
-        result = request.form-signin
+        result = request.form
         print(result)
         success = backend.addUser(result['display_name'], result['password'], result['email'], result['first_name'], result['last_name'])
         if success:
@@ -92,7 +92,7 @@ def profile(display_name):
 @app.route('/check/', methods=['POST', 'GET'])
 def checkPassword():
     if request.method == 'POST':
-        result = request.form
+        result = request.form-signin
         print(result)
         success = backend.checkPassword(result['email'],result['password'])
         if success:
