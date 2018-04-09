@@ -144,6 +144,7 @@ def checkPassword(email, password):
     cur.execute(check)
     result = cur.fetchone()[0]
 
+    print(result)
     # return false if user exists
     if not result:
         return False
