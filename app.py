@@ -99,7 +99,7 @@ def checkPassword():
         if success:
             return render_template('userProfile.html', username=result['email'])
         else:
-            return render_template('error.html', name=result['display_name'])
+            return render_template('error.html', name=result['email'])
     else:
         print("Not a post?")
 
