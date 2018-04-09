@@ -152,7 +152,7 @@ def checkPassword(email, password):
     command = "SELECT PASS FROM USERS WHERE EMAIL = '{}';".format(email)
     print(command)
     cur.execute(command)
-    correctPass = cur.fetchall()
+    correctPass = cur.fetchone()
     cur.close()
     conn.close()
 
