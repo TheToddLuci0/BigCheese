@@ -36,8 +36,8 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/employer/<name>', methods=['POST', 'GET'])
-def employer(name):
+@app.route('/employer/<display_name>', methods=['POST', 'GET'])
+def employer(display_name):
     if request.method == 'POST':
         result = request.form
         print(result)
