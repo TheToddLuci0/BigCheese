@@ -140,6 +140,7 @@ def checkPassword(email, password):
     cur = conn.cursor()
 
     check = "SELECT EXISTS (SELECT 1 FROM USERS WHERE UNAME = '{}');".format(email)
+    print(check)
     cur.execute(check)
     result = cur.fetchone()[0]
 
@@ -148,11 +149,13 @@ def checkPassword(email, password):
         return False
 
     command = "SELECT * FROM USERS WHERE EMAIL = '{}';".format(email)
+    print(command)
     cur.execute(command)
     correctPass = cur.fetchall()
     cur.close()
     conn.close()
 
+    print("User: {} Psql: {}".format(password, correctPass))
     if password == correctPass:
         return True
     else:
