@@ -69,9 +69,16 @@ def user():
     return render_template('userProfile.html')
 
 
-@app.route('/user/<username>')
+@app.route('/user/<username>', methods=['POST', 'GET'])
 def profile(username):
-    return render_template('userProfile.html', username=username)
+    if request.method == 'POST':
+        result = request.form
+        print(result)
+        success = backend.addUser(result['display_name'], result['password'], result['email'], result['first_name'], result['last_name'])
+        if success:
+            return render_template('userProfile.html', username=username)
+        else:
+            return render_template('error.html', name=result['display_name'])
 
 
 @app.route('/about/')
