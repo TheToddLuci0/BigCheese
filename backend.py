@@ -127,7 +127,7 @@ def addUser(userName, password, email, fName, lName):
     if result:
         return False
 
-    command = "INSERT INTO USERS (UNAME, PASS, EMAIL, NUM_REVIEWS, FNAME, LNAME) VALUES ('{}','{}','{},', {},'{}','{}')".format(userName,password,email,0,fName,lName)
+    command = "INSERT INTO USERS (UNAME, PASS, EMAIL, NUM_REVIEWS, FNAME, LNAME) VALUES ('{}','{}','{}', {},'{}','{}')".format(userName,password,email,0,fName,lName)
     print("Insert user command: {}".format(command))
     cur.execute(command)
     conn.commit()
@@ -139,7 +139,7 @@ def checkPassword(email, password):
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
     cur = conn.cursor()
 
-    check = "SELECT EXISTS (SELECT 1 FROM USERS WHERE EMAIL = '{},');".format(email)
+    check = "SELECT EXISTS (SELECT 1 FROM USERS WHERE EMAIL = '{}');".format(email)
     print(check)
     cur.execute(check)
     result = cur.fetchone()[0]
