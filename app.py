@@ -100,7 +100,8 @@ def checkPassword():
             return render_template('userProfile.html', username=result['email'])
         else:
             return render_template('error.html', name=result['display_name'])
-
+    else:
+        print("Not a post?")
 
 
 @app.route('/about/')
