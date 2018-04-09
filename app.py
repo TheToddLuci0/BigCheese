@@ -96,7 +96,7 @@ def checkPassword():
         print(request.form)
         result = request.form
         print(result)
-        success = backend.checkPassword(result['email'], result['password'])
+        success = backend.checkPassword(id['email'], id['password'])
         if success:
             return render_template('userProfile.html', username=result['email'])
         else:
