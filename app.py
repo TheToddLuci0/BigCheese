@@ -64,8 +64,17 @@ def employers():
     return render_template('employers.html', result=backend.getCompany())
 
 
-@app.route('/user/')
+@app.route('/user/', methods=['POST', 'GET'])
 def user():
+    if request.method == 'POST':
+        result = request.form
+        print(result)
+        success = backend.addUser(result['display_name'], result['password'], result['email'], result['first_name'], result['last_name'])
+        if success:
+            return render_template('userProfile.html', username=username)
+        else:
+            return render_template('error.html', name=result['display_name'])
+
     return render_template('userProfile.html')
 
 
