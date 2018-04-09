@@ -92,7 +92,7 @@ def profile(display_name):
 @app.route('/check/', methods=['POST', 'GET'])
 def checkPassword():
     if request.method == 'POST':
-        result = request.form-signin
+        result = request.form
         print(result)
         success = backend.checkPassword(result['email'],result['password'])
         if success:
