@@ -118,7 +118,6 @@ def getReviews(companyName):
 def addUser(userName, password, email, fName, lName):
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
     cur = conn.cursor()
-    print(companyName, about)
 
     check = "SELECT EXISTS (SELECT 1 FROM USERS WHERE UNAME = '{}');".format(userName)
     cur.execute(check)
