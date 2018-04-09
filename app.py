@@ -89,6 +89,18 @@ def profile(display_name):
         else:
             return render_template('error.html', name=result['display_name'])
 
+@app.route('/check/', methods=['POST', 'GET'])
+def checkPassword():
+    if request.method == 'POST':
+        result = request.form
+        print(result)
+        success = backend.checkPassword(result['email'],result['password'])
+        if success:
+            return render_template('userProfile.html', username=result['email'])
+        else:
+            return render_template('error.html', name=result['display_name'])
+
+
 
 @app.route('/about/')
 def about():

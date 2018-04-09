@@ -129,9 +129,31 @@ def addUser(userName, password, email, fName, lName):
 
     command = "INSERT INTO USERS (UNAME, PASS, EMAIL, NUM_REVIEWS, FNAME, LNAME) VALUES ('{}','{}','{},', {},'{}','{}')".format(userName,password,email,0,fName,lName)
     print("Insert user command: {}".format(command))
+    cur.execute(command)
     conn.commit()
     cur.close()
     conn.close()
     return True
 
+def checkPassword(email, password):
+    conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
+    cur = conn.cursor()
 
+    check = "SELECT EXISTS (SELECT 1 FROM USERS WHERE UNAME = '{}');".format(userName)
+    cur.execute(check)
+    result = cur.fetchone()[0]
+
+    # return false if user exists
+    if not result:
+        return False
+
+    command = "SELECT * FROM USERS WHERE EMAIL = '{}';".format(email)
+    cur.execute(command)
+    correctPass = cur.fetchall()
+    cur.close()
+    conn.close()
+
+    if password == correctPass:
+        return True
+    else:
+        return False
