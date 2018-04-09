@@ -90,6 +90,11 @@ def login():
     return render_template('login.html')
 
 
+@app.route('/signup/')
+def signup():
+    return render_template('signup.html')
+
+
 @app.route('/addNewCompany')
 def getCompanyName():
     return render_template('companyInput.html')
