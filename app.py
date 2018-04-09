@@ -25,7 +25,6 @@ class User(UserMixin):
         return self.active
 
 
-# I need to show a difference so this will commit
 
 
 
@@ -99,7 +98,14 @@ def signup():
 def getCompanyName():
     return render_template('companyInput.html')
 
-
+@app.route('/result',methods = ['POST', 'GET'])
+def displayCompany():
+    if request.method == 'POST':
+        print("got your shit")
+        result = request.form
+        print(result)
+        backend.addCompany(result['Name'], result['About'])
+        return " ".join(str(x) for x in backend.getCompany())
 
 if __name__ == '__main__':
     app.run()
