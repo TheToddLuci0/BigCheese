@@ -71,7 +71,7 @@ def user():
         print(result)
         success = backend.addUser(result['display_name'], result['password'], result['email'], result['first_name'], result['last_name'])
         if success:
-            return render_template('userProfile.html', username=username)
+            return render_template('userProfile.html', username=result['display_name'])
         else:
             return render_template('error.html', name=result['display_name'])
 
