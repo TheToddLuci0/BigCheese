@@ -36,8 +36,8 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/employer/<display_name>', methods=['POST', 'GET'])
-def employer(display_name):
+@app.route('/employer/<name>', methods=['POST', 'GET'])
+def employer(name):
     if request.method == 'POST':
         result = request.form
         print(result)
@@ -69,8 +69,8 @@ def user():
     return render_template('userProfile.html')
 
 
-@app.route('/user/<username>', methods=['POST', 'GET'])
-def profile(username):
+@app.route('/user/<display_name>', methods=['POST', 'GET'])
+def profile(display_name):
     if request.method == 'POST':
         result = request.form
         print(result)
