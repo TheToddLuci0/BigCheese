@@ -149,7 +149,7 @@ def checkPassword(email, password):
     if not result:
         return False
 
-    command = "SELECT * FROM USERS WHERE EMAIL = '{}';".format(email)
+    command = "SELECT PASS FROM USERS WHERE EMAIL = '{}';".format(email)
     print(command)
     cur.execute(command)
     correctPass = cur.fetchall()
