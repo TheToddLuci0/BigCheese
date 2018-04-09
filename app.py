@@ -93,7 +93,7 @@ def profile(display_name):
 def checkPassword():
     print("Are you here?")
     if request.method == 'POST':
-        print(request)
+        print(request.form)
         result = request.form
         print(result)
         success = backend.checkPassword(result['email'], result['password'])
