@@ -56,14 +56,18 @@ def addReview(name):
 @app.route('/employers/', methods=['POST', 'GET'])
 def employers():
     if request.method == 'POST':
-        print("got your shit")
-        result = request.form
-        print(result)
-        success = backend.addCompany(result['Name'], result['About'])
-        if success:
-            return render_template('employers.html', result=backend.getCompany())
+
+        if request.cookies.get('loggedIn'):
+            print("got your shit")
+            result = request.form
+            print(result)
+            success = backend.addCompany(result['Name'], result['About'])
+            if success:
+                return render_template('employers.html', result=backend.getCompany())
+            else:
+                return render_template('error.html', name=result['Name'])
         else:
-            return render_template('error.html', name=result['Name'])
+            return render_template('login.html')
     return render_template('employers.html', result=backend.getCompany())
 
 
@@ -141,16 +145,23 @@ def signup():
 
 @app.route('/addNewCompany')
 def getCompanyName():
-    return render_template('companyInput.html')
+    if request.cookies.get('loggedIn'):
+        return render_template('companyInput.html')
+    else:
+        return render_template('login.html')
 
 @app.route('/result',methods = ['POST', 'GET'])
 def displayCompany():
     if request.method == 'POST':
-        print("got your shit")
-        result = request.form
-        print(result)
-        backend.addCompany(result['Name'], result['About'])
-        return " ".join(str(x) for x in backend.getCompany())
+
+        if request.cookies.get('loggedIn'):
+            print("got your shit")
+            result = request.form
+            print(result)
+            backend.addCompany(result['Name'], result['About'])
+            return " ".join(str(x) for x in backend.getCompany())
+        else:
+            return render_template('login.html')
 
 if __name__ == '__main__':
     app.run()
