@@ -64,7 +64,7 @@ def employers():
             print(result)
             success = backend.addCompany(result['Name'], result['About'])
             if success:
-                where = "/employer/{}".format(Name)
+                where = "/employer/{}".format(result['Name'])
                 return redirect(url_for(where))
 #                return render_template('employer.html', result=backend.getCompany())
             else:
