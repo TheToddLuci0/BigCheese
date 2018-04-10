@@ -25,12 +25,6 @@ class User(UserMixin):
         return self.active
 
 
-
-
-
-
-
-
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -44,12 +38,13 @@ def employer(name):
                 result = request.form
                 print(result)
                 backend.addReview(result['Name'], result['Review'], int(result['Score']), request.cookies.get('username'))
-                return render_template('employers.html', result=backend.getCompany())
+                return render_template('employer.html', result=backend.getCompany())
             else:
                 return render_template('login.html')
         return render_template('employer.html', name=name, reviews=backend.getReviews(name))
     else:
         return render_template('login.html')
+
 
 @app.route('/addReview/<name>')
 def addReview(name):
@@ -57,6 +52,7 @@ def addReview(name):
         return render_template('addReview.html', name=name)
     else:
         return render_template('login.html')
+
 
 @app.route('/employers/', methods=['POST', 'GET'])
 def employers():
@@ -101,6 +97,7 @@ def profile(display_name):
             return render_template('userProfile.html', username=username)
         else:
             return render_template('error.html', name=result['display_name'])
+
 
 @app.route('/check/', methods=['POST', 'GET'])
 def checkPassword():
@@ -155,7 +152,8 @@ def getCompanyName():
     else:
         return render_template('login.html')
 
-@app.route('/result',methods = ['POST', 'GET'])
+
+@app.route('/result', methods=['POST', 'GET'])
 def displayCompany():
     if request.method == 'POST':
 
@@ -167,6 +165,7 @@ def displayCompany():
             return " ".join(str(x) for x in backend.getCompany())
         else:
             return render_template('login.html')
+
 
 if __name__ == '__main__':
     app.run()
