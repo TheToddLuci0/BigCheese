@@ -172,4 +172,4 @@ def userForEmail(email):
     username = cur.fetchone()
     cur.close()
     conn.close()
-    return username
+    return username[0]
