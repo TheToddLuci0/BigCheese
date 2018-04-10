@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, make_response
-from flask.ext.login import (LoginManager, current_user, login_required,
+from flask_login import (LoginManager, current_user, login_required,
                             login_user, logout_user, UserMixin,
                             confirm_login, fresh_login_required)
 from flask_sqlalchemy import SQLAlchemy
