@@ -36,7 +36,7 @@ def employer(name):
         if request.method == 'POST':
             if request.cookies.get('loggedIn'):
                 result = request.form
-                print(result)
+                #print(result)
                 backend.addReview(result['Name'], result['Review'], int(result['Score']), request.cookies.get('username'))
                 #return render_template('employer.html', result=backend.getCompany())
                 return redirect("http://www.bigcheese.review/employer/{}".format(result['Name']))
