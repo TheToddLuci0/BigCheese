@@ -39,10 +39,13 @@ def index():
 @app.route('/employer/<name>', methods=['POST', 'GET'])
 def employer(name):
     if request.method == 'POST':
-        result = request.form
-        print(result)
-        backend.addReview(result['Name'], result['Review'], int(result['Score']), "ThatOneJerk")
-        return render_template('employers.html', result=backend.getCompany())
+        if request.cookies.get('loggedIn'):
+            result = request.form
+            print(result)
+            backend.addReview(result['Name'], result['Review'], int(result['Score']), request.cookies.get('username'))
+            return render_template('employers.html', result=backend.getCompany())
+        else:
+            return render_template('login.html')
     return render_template('employer.html', name=name, reviews=backend.getReviews(name))
 
 @app.route('/addReview/<name>')
