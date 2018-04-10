@@ -16,6 +16,7 @@ def getCompany():
     #        string[i][1].append(i[1])
     return output
 
+
 def getCompanySearch(companyName):
     string = list()
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
@@ -51,22 +52,25 @@ def addCompany(companyName, about):
 
     return True
 
+
 def addReview(companyName, review, score, username):
     current = getCompanySearch(companyName)
 
     # add review
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
     cur = conn.cursor()
-    sql = "INSERT INTO REVIEW (CNAME,REVIEW,SCORE,UNAME) VALUES ('{}','{}',{},'{}')".format(companyName, review, score, username)
+    sql = "INSERT INTO REVIEW (CNAME,REVIEW,SCORE,UNAME) VALUES ('{}','{}',{},'{}')".format(companyName, review, score,
+                                                                                            username)
     print("sql statement: {}".format(sql))
     cur.execute(sql)
     conn.commit()
     cur.close()
 
     # update company
-    newScore = ( ((current[0][2] * current[0][3]) + score) / (current[0][3] + 1))
+    newScore = (((current[0][2] * current[0][3]) + score) / (current[0][3] + 1))
     cur = conn.cursor()
-    update = "UPDATE COMPANY SET RATE = {}, NUM_RATE = {} WHERE NAME = '{}'".format(newScore, (current[0][3] + 1), companyName)
+    update = "UPDATE COMPANY SET RATE = {}, NUM_RATE = {} WHERE NAME = '{}'".format(newScore, (current[0][3] + 1),
+                                                                                    companyName)
     print("update statement: {}".format(update))
     cur.execute(update)
     conn.commit()
@@ -82,6 +86,7 @@ def getReviews(companyName):
     cur.execute(command)
     reviews = cur.fetchall()
     return reviews
+
 
 def addCompany(companyName, about):
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
@@ -105,6 +110,7 @@ def addCompany(companyName, about):
     conn.close()
     return True
 
+
 def getReviews(companyName):
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
     cur = conn.cursor()
@@ -114,6 +120,7 @@ def getReviews(companyName):
     cur.close()
     conn.close()
     return reviews
+
 
 def addUser(userName, password, email, fName, lName):
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
@@ -127,13 +134,15 @@ def addUser(userName, password, email, fName, lName):
     if result:
         return False
 
-    command = "INSERT INTO USERS (UNAME, PASS, EMAIL, NUM_REVIEWS, FNAME, LNAME) VALUES ('{}','{}','{}', {},'{}','{}')".format(userName,password,email,0,fName,lName)
+    command = "INSERT INTO USERS (UNAME, PASS, EMAIL, NUM_REVIEWS, FNAME, LNAME) VALUES ('{}','{}','{}', {},'{}','{}')".format(
+        userName, password, email, 0, fName, lName)
     print("Insert user command: {}".format(command))
     cur.execute(command)
     conn.commit()
     cur.close()
     conn.close()
     return True
+
 
 def checkPassword(email, password):
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
@@ -163,6 +172,7 @@ def checkPassword(email, password):
     else:
         print('All is dispair once again')
         return False
+
 
 def userForEmail(email):
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")

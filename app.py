@@ -98,6 +98,7 @@ def checkPassword():
         print(result)
         success = backend.checkPassword(result['email'], result['password'])
         if success:
+            print(result['email'])
             username = userForEmail(result['email'])
             print(username)
             print("It is true")
