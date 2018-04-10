@@ -32,7 +32,7 @@ def getCompanySearch(companyName):
 def addCompany(companyName, about):
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
     cur = conn.cursor()
-    print(companyName, about)
+    #print(companyName, about)
 
     check = "SELECT EXISTS (SELECT 1 FROM COMPANY WHERE NAME = %s);"
     cur.execute(check, (companyName,))
@@ -55,12 +55,12 @@ def addCompany(companyName, about):
 
 def addReview(companyName, review, score, username):
     current = getCompanySearch(companyName)
-    print("Starting to add review for {}".format(companyName))
+    #print("Starting to add review for {}".format(companyName))
     # add review
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
     cur = conn.cursor()
     sql = "INSERT INTO REVIEW (CNAME,REVIEW,SCORE,UNAME) VALUES (%s,%s,%s,%s);"
-    print("sql statement: {}".format(sql))
+    #print("sql statement: {}".format(sql))
     cur.execute(sql, (companyName, review, score, username))
     conn.commit()
     cur.close()
@@ -69,7 +69,7 @@ def addReview(companyName, review, score, username):
     newScore = (((current[0][2] * current[0][3]) + score) / (current[0][3] + 1))
     cur = conn.cursor()
     update = "UPDATE COMPANY SET RATE = %s, NUM_RATE = %s WHERE NAME = %s;"
-    print("update statement: {}".format(update))
+    #print("update statement: {}".format(update))
     cur.execute(update, (newScore, (current[0][3] + 1),companyName))
     conn.commit()
     cur.close()
@@ -80,7 +80,7 @@ def getReviews(companyName):
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
     cur = conn.cursor()
     command = "SELECT * FROM REVIEW WHERE CNAME = '{}';".format(companyName)
-    print(command)
+    #print(command)
     cur.execute(command)
     reviews = cur.fetchall()
     return reviews
@@ -89,7 +89,7 @@ def getReviews(companyName):
 def addCompany(companyName, about):
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
     cur = conn.cursor()
-    print(companyName, about)
+    #print(companyName, about)
 
     check = "SELECT EXISTS (SELECT 1 FROM COMPANY WHERE NAME = '{}');".format(companyName)
     cur.execute(check)
@@ -134,7 +134,7 @@ def addUser(userName, password, email, fName, lName):
 
     command = "INSERT INTO USERS (UNAME, PASS, EMAIL, NUM_REVIEWS, FNAME, LNAME) VALUES ('{}','{}','{}', {},'{}','{}')".format(
         userName, password, email, 0, fName, lName)
-    print("Insert user command: {}".format(command))
+    #print("Insert user command: {}".format(command))
     cur.execute(command)
     conn.commit()
     cur.close()
@@ -147,28 +147,28 @@ def checkPassword(email, password):
     cur = conn.cursor()
 
     check = "SELECT EXISTS (SELECT 1 FROM USERS WHERE EMAIL = '{}');".format(email)
-    print(check)
+    #print(check)
     cur.execute(check)
     result = cur.fetchone()[0]
 
-    print(result)
+    #print(result)
     # return false if user exists
     if not result:
         return False
 
     command = "SELECT PASS FROM USERS WHERE EMAIL = '{}';".format(email)
-    print(command)
+    #print(command)
     cur.execute(command)
     correctPass = cur.fetchone()
     cur.close()
     conn.close()
 
-    print("User: {} Psql: {}".format(password, correctPass))
+    #print("User: {} Psql: {}".format(password, correctPass))
     if password == correctPass[0]:
-        print("And all is right with the world")
+        #print("And all is right with the world")
         return True
     else:
-        print('All is dispair once again')
+        #print('All is dispair once again')
         return False
 
 
