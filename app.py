@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, flash, make_response
 from flask.ext.login import (LoginManager, current_user, login_required,
                             login_user, logout_user, UserMixin,
                             confirm_login, fresh_login_required)
@@ -75,7 +75,8 @@ def user():
         else:
             return render_template('error.html', name=result['display_name'])
 
-    return render_template('userProfile.html')
+    username = request.cookies.get('username')
+    return render_template('userProfile.html', name=username)
 
 
 @app.route('/user/<display_name>', methods=['POST', 'GET'])
@@ -97,7 +98,11 @@ def checkPassword():
         print(result)
         success = backend.checkPassword(result['email'], result['password'])
         if success:
-            return render_template('userProfile.html', username=result['email'])
+            resp = make_response(render_template(...))
+            resp.set_cookie('loggedIn', 'True')
+            resp.set_cookie('username', '{}'.format(userForEmail(result['email'])))
+
+            return render_template('userProfile.html', username=userForEmail(result['email']))
         else:
             return render_template('error.html', name=result['email'])
     else:

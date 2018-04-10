@@ -163,3 +163,13 @@ def checkPassword(email, password):
     else:
         print('All is dispair once again')
         return False
+
+def userForEmail(email):
+    conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
+    cur = conn.cursor()
+    command = "SELECT UNAME FROM USERS WHERE EMAIL = '{}';".format(email)
+    cur.execute(command)
+    username = cur.fetchone()
+    cur.close()
+    conn.close()
+    return username
