@@ -122,7 +122,8 @@ def about():
 
 @app.route('/test/')
 def test():
-    return request.cookies.get('username')
+    if print(request.cookies.get('loggedIn'):
+        return request.cookies.get('username')
 
 
 @app.route('/login/')
