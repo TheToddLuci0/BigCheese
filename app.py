@@ -37,7 +37,7 @@ def employer(name):
     if request.cookies.get('loggedIn'):
         if request.method == 'POST':
             result = request.form
-            #logging.info(result)
+            #print(result)
             backend.addReview(result['Name'], result['Review'], int(result['Score']), request.cookies.get('username'))
             #return render_template('employer.html', result=backend.getCompany())
             return redirect("http://www.bigcheese.review/employers")#.format(result['Name']))
@@ -60,9 +60,9 @@ def employers():
     if request.method == 'POST':
 
         if request.cookies.get('loggedIn'):
-            #logging.info("got your shit")
+            #print("got your shit")
             result = request.form
-            #logging.info(result)
+            #print(result)
             success = backend.addCompany(result['Name'], result['About'])
             if success:
                 where = "http://www.bigcheese.review/employer/{}".format(result['Name'])
@@ -79,7 +79,7 @@ def employers():
 def user():
     if request.method == 'POST':
         result = request.form
-        logging.info(result)
+        print(result)
         success = backend.addUser(result['display_name'], result['password'], result['email'], result['first_name'], result['last_name'])
         if success:
             return render_template('userProfile.html', username=result['display_name'])
@@ -94,7 +94,7 @@ def user():
 def profile(display_name):
     if request.method == 'POST':
         result = request.form
-        logging.info(result)
+        print(result)
         success = backend.addUser(result['display_name'], result['password'], result['email'], result['first_name'], result['last_name'])
         if success:
             return render_template('userProfile.html', username=username)
@@ -104,27 +104,27 @@ def profile(display_name):
 
 @app.route('/check/', methods=['POST', 'GET'])
 def checkPassword():
-    logging.info("Are you here?")
+    print("Are you here?")
     if request.method == 'POST':
         result = request.form
-        logging.info(result)
+        print(result)
         success = backend.checkPassword(result['email'], result['password'])
         if success:
-            logging.info(result['email'])
+            print(result['email'])
             username = backend.userForEmail(result['email'])
-            logging.info(username)
-            logging.info("It is true")
+            print(username)
+            print("It is true")
             resp = make_response(render_template('userProfile.html', username=username))
             resp.set_cookie('loggedIn', 'True')
             resp.set_cookie('username', username)
-            logging.info(request.cookies.get('username'))
-            logging.info(request.cookies.get('loggedIn'))
+            print(request.cookies.get('username'))
+            print(request.cookies.get('loggedIn'))
 
             return resp
         else:
             return render_template('error.html', name=result['email'])
     else:
-        logging.info("Not a post?")
+        print("Not a post?")
 
 
 @app.route('/about/')
@@ -161,9 +161,9 @@ def displayCompany():
     if request.method == 'POST':
 
         if request.cookies.get('loggedIn'):
-            logging.info("got your shit")
+            print("got your shit")
             result = request.form
-            logging.info(result)
+            print(result)
             backend.addCompany(result['Name'], result['About'])
             return " ".join(str(x) for x in backend.getCompany())
         else:
