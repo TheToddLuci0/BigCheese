@@ -34,8 +34,8 @@ def addCompany(companyName, about):
     cur = conn.cursor()
     print(companyName, about)
 
-    check = "SELECT EXISTS (SELECT 1 FROM COMPANY WHERE NAME = '{}');".format(companyName)
-    cur.execute(check)
+    check = "SELECT EXISTS (SELECT 1 FROM COMPANY WHERE NAME = %s);"
+    cur.execute(check, (companyName,))
     result = cur.fetchone()[0]
 
     # return false if company exists
@@ -59,20 +59,18 @@ def addReview(companyName, review, score, username):
     # add review
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
     cur = conn.cursor()
-    sql = "INSERT INTO REVIEW (CNAME,REVIEW,SCORE,UNAME) VALUES ('{}','{}',{},'{}')".format(companyName, review, score,
-                                                                                            username)
+    sql = "INSERT INTO REVIEW (CNAME,REVIEW,SCORE,UNAME) VALUES (%s,%s,%s,%s);"
     print("sql statement: {}".format(sql))
-    cur.execute(sql)
+    cur.execute(sql, (companyName, review, score, username))
     conn.commit()
     cur.close()
 
     # update company
     newScore = (((current[0][2] * current[0][3]) + score) / (current[0][3] + 1))
     cur = conn.cursor()
-    update = "UPDATE COMPANY SET RATE = {}, NUM_RATE = {} WHERE NAME = '{}'".format(newScore, (current[0][3] + 1),
-                                                                                    companyName)
+    update = "UPDATE COMPANY SET RATE = %s, NUM_RATE = %s WHERE NAME = %s;"
     print("update statement: {}".format(update))
-    cur.execute(update)
+    cur.execute(update, (newScore, (current[0][3] + 1),companyName))
     conn.commit()
     cur.close()
     conn.close()
