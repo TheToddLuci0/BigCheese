@@ -124,8 +124,6 @@ def checkPassword():
             return resp
         else:
             return render_template('error.html', name=result['email'])
-    else:
-        ##print("Not a post?")
 
 
 @app.route('/about/')
