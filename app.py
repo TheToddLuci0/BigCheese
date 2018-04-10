@@ -101,6 +101,9 @@ def checkPassword():
             resp = make_response(render_template(...))
             resp.set_cookie('loggedIn', 'True')
             resp.set_cookie('username', '{}'.format(userForEmail(result['email'])))
+            print("It is true")
+            print(request.cookies.get('username'))
+            print(request.cookies.get('loggedIn'))
 
             return render_template('userProfile.html', username=userForEmail(result['email']))
         else:
