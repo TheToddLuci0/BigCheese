@@ -60,9 +60,9 @@ def employers():
     if request.method == 'POST':
 
         if request.cookies.get('loggedIn'):
-            logging.info("got your shit")
+            #logging.info("got your shit")
             result = request.form
-            logging.info(result)
+            #logging.info(result)
             success = backend.addCompany(result['Name'], result['About'])
             if success:
                 where = "http://www.bigcheese.review/employer/{}".format(result['Name'])
