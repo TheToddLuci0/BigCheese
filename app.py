@@ -174,6 +174,6 @@ def displayCompany():
 
 
 if __name__ == '__main__':
-    logging.basicConfig(level=logging.DEBUG, filename="logfile", filemode="a+",
+    logging.basicConfig(level=logging.DEBUG, filename="/var/log/gunicorn/logfile", filemode="a+",
                         format="%(asctime)-15s %(levelname)-8s %(message)s")
     app.run()
