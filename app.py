@@ -99,7 +99,7 @@ def checkPassword():
         success = backend.checkPassword(result['email'], result['password'])
         if success:
             print("It is true")
-            resp = make_response(render_template('userProfile.html', username=userForEmail(result['email'])))
+            resp = make_response(render_template('userProfile.html', username=backend.userForEmail(result['email'])))
             resp.set_cookie('loggedIn', 'True')
             resp.set_cookie('username', '{}'.format(userForEmail(result['email'])))
             print(request.cookies.get('username'))
