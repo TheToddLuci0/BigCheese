@@ -5,6 +5,8 @@ from flask_login import (LoginManager, current_user, login_required,
 from flask_sqlalchemy import SQLAlchemy
 import backend
 from flask_bootstrap import Bootstrap
+import logging
+
 
 
 app = Flask(__name__)
@@ -36,7 +38,7 @@ def employer(name):
         if request.method == 'POST':
             if request.cookies.get('loggedIn'):
                 result = request.form
-                #print(result)
+                #logging.info(result)
                 backend.addReview(result['Name'], result['Review'], int(result['Score']), request.cookies.get('username'))
                 #return render_template('employer.html', result=backend.getCompany())
                 return redirect("http://www.bigcheese.review/employers")#.format(result['Name']))
@@ -61,9 +63,9 @@ def employers():
     if request.method == 'POST':
 
         if request.cookies.get('loggedIn'):
-            print("got your shit")
+            logging.info("got your shit")
             result = request.form
-            print(result)
+            logging.info(result)
             success = backend.addCompany(result['Name'], result['About'])
             if success:
                 where = "http://www.bigcheese.review/employer/{}".format(result['Name'])
@@ -80,7 +82,7 @@ def employers():
 def user():
     if request.method == 'POST':
         result = request.form
-        print(result)
+        logging.info(result)
         success = backend.addUser(result['display_name'], result['password'], result['email'], result['first_name'], result['last_name'])
         if success:
             return render_template('userProfile.html', username=result['display_name'])
@@ -95,7 +97,7 @@ def user():
 def profile(display_name):
     if request.method == 'POST':
         result = request.form
-        print(result)
+        logging.info(result)
         success = backend.addUser(result['display_name'], result['password'], result['email'], result['first_name'], result['last_name'])
         if success:
             return render_template('userProfile.html', username=username)
@@ -105,27 +107,27 @@ def profile(display_name):
 
 @app.route('/check/', methods=['POST', 'GET'])
 def checkPassword():
-    print("Are you here?")
+    logging.info("Are you here?")
     if request.method == 'POST':
         result = request.form
-        print(result)
+        logging.info(result)
         success = backend.checkPassword(result['email'], result['password'])
         if success:
-            print(result['email'])
+            logging.info(result['email'])
             username = backend.userForEmail(result['email'])
-            print(username)
-            print("It is true")
+            logging.info(username)
+            logging.info("It is true")
             resp = make_response(render_template('userProfile.html', username=username))
             resp.set_cookie('loggedIn', 'True')
             resp.set_cookie('username', username)
-            print(request.cookies.get('username'))
-            print(request.cookies.get('loggedIn'))
+            logging.info(request.cookies.get('username'))
+            logging.info(request.cookies.get('loggedIn'))
 
             return resp
         else:
             return render_template('error.html', name=result['email'])
     else:
-        print("Not a post?")
+        logging.info("Not a post?")
 
 
 @app.route('/about/')
@@ -162,9 +164,9 @@ def displayCompany():
     if request.method == 'POST':
 
         if request.cookies.get('loggedIn'):
-            print("got your shit")
+            logging.info("got your shit")
             result = request.form
-            print(result)
+            logging.info(result)
             backend.addCompany(result['Name'], result['About'])
             return " ".join(str(x) for x in backend.getCompany())
         else:
@@ -172,4 +174,6 @@ def displayCompany():
 
 
 if __name__ == '__main__':
+    logging.basicConfig(level=logging.DEBUG, filename="logfile", filemode="a+",
+                        format="%(asctime)-15s %(levelname)-8s %(message)s")
     app.run()
