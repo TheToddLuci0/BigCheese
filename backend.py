@@ -55,7 +55,7 @@ def addCompany(companyName, about):
 
 def addReview(companyName, review, score, username):
     current = getCompanySearch(companyName)
-
+    print("Starting to add review for {}".format(companyName))
     # add review
     conn = psycopg2.connect("dbname=theCellar user=postgres password=steve host=localhost")
     cur = conn.cursor()
