@@ -99,7 +99,7 @@ def checkPassword():
         success = backend.checkPassword(result['email'], result['password'])
         if success:
             print(result['email'])
-            username = userForEmail(result['email'])
+            username = backend.userForEmail(result['email'])
             print(username)
             print("It is true")
             resp = make_response(render_template('userProfile.html', username=username))
