@@ -39,7 +39,7 @@ def employer(name):
                 #print(result)
                 backend.addReview(result['Name'], result['Review'], int(result['Score']), request.cookies.get('username'))
                 #return render_template('employer.html', result=backend.getCompany())
-                return redirect("http://www.bigcheese.review/employer/{}".format(result['Name']))
+                return redirect("http://www.bigcheese.review/employers")#.format(result['Name']))
             else:
                 return render_template('login.html')
         return render_template('employer.html', name=name, reviews=backend.getReviews(name))
