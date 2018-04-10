@@ -99,13 +99,13 @@ def checkPassword():
         success = backend.checkPassword(result['email'], result['password'])
         if success:
             print("It is true")
-            resp = make_response(render_template(...))
+            resp = make_response(render_template('userProfile.html', username=userForEmail(result['email'])))
             resp.set_cookie('loggedIn', 'True')
             resp.set_cookie('username', '{}'.format(userForEmail(result['email'])))
             print(request.cookies.get('username'))
             print(request.cookies.get('loggedIn'))
 
-            return render_template('userProfile.html', username=userForEmail(result['email']))
+            return resp
         else:
             return render_template('error.html', name=result['email'])
     else:
