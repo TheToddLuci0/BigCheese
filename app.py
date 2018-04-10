@@ -41,7 +41,8 @@ def employer(name):
                 #return render_template('employer.html', result=backend.getCompany())
                 return redirect("http://www.bigcheese.review/employers")#.format(result['Name']))
             else:
-                return render_template('login.html')
+              return render_template('login.html')
+    else:
         return render_template('employer.html', name=name, reviews=backend.getReviews(name))
     else:
         return render_template('login.html')
