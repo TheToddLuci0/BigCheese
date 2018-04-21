@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c5be41c1-a4ce-4a09-a18e-6e4f17fe0229" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/templates/addReview.html" afterPath="$PROJECT_DIR$/templates/addReview.html" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/BigCheese$app.coverage" NAME="app Coverage Results" MODIFIED="1522879042892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#90#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addReview.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/addReview.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="102" lean-forward="false" selection-start-line="3" selection-start-column="102" selection-end-line="3" selection-end-column="102" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/error.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userProfile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/userProfile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="100" lean-forward="false" selection-start-line="5" selection-start-column="100" selection-end-line="5" selection-end-column="100" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="backend.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="805">
+              <caret line="56" column="4" lean-forward="false" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
+              <folding>
+                <marker date="1523386010762" expanded="true" signature="298:319" ph="SELECT * FRO... company" />
+                <marker date="1523386010762" expanded="true" signature="662:701" ph="SELECT * FRO... company" />
+                <marker date="1523386010762" expanded="true" signature="1073:1126" ph="SELECT EXIST... " />
+                <marker date="1523386010762" expanded="true" signature="1088:1125" ph="SELECT 1 FRO... COMPANY" />
+                <marker date="1523386010762" expanded="true" signature="1353:1420" ph="INSERT INTO COMPANY... " />
+                <marker date="1523386010762" expanded="true" signature="1846:1912" ph="INSERT INTO REVIEW... " />
+                <marker date="1523386010762" expanded="true" signature="2236:2295" ph="UPDATE COMPANY... " />
+                <marker date="1523386010762" expanded="true" signature="2627:2666" ph="SELECT * FRO... REVIEW" />
+                <marker date="1523386010762" expanded="true" signature="2981:3036" ph="SELECT EXIST... " />
+                <marker date="1523386010762" expanded="true" signature="2996:3035" ph="SELECT 1 FRO... COMPANY" />
+                <marker date="1523386010762" expanded="true" signature="3267:3334" ph="INSERT INTO COMPANY... " />
+                <marker date="1523386010762" expanded="true" signature="3615:3654" ph="SELECT * FRO... REVIEW" />
+                <marker date="1523386010762" expanded="true" signature="3969:4023" ph="SELECT EXIST... " />
+                <marker date="1523386010762" expanded="true" signature="3984:4022" ph="SELECT 1 FRO... USERS" />
+                <marker date="1523386010762" expanded="true" signature="4184:4287" ph="INSERT INTO USERS... " />
+                <marker date="1523386010762" expanded="true" signature="4663:4717" ph="SELECT EXIST... " />
+                <marker date="1523386010762" expanded="true" signature="4678:4716" ph="SELECT 1 FRO... USERS" />
+                <marker date="1523386010762" expanded="true" signature="4916:4957" ph="SELECT PASS USERS" />
+                <marker date="1523386010762" expanded="true" signature="5486:5528" ph="SELECT UNAME... USERS" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="109" lean-forward="false" selection-start-line="4" selection-start-column="109" selection-end-line="4" selection-end-column="109" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/signup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="61" column="101" lean-forward="false" selection-start-line="61" selection-start-column="101" selection-end-line="61" selection-end-column="101" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="companyInput.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/companyInput.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>logging.info</find>
+      <find>print</find>
+      <find>addReview</find>
+      <find>employers.html</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>logging.info</replace>
+      <replace>print</replace>
+      <replace>#print</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/companyInput.html" />
+        <option value="$PROJECT_DIR$/templates/employers.html" />
+        <option value="$PROJECT_DIR$/templates/companyInput.html" />
+        <option value="$PROJECT_DIR$/templates/signup.html" />
+        <option value="$PROJECT_DIR$/templates/userProfile.html" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/templates/error.html" />
+        <option value="$PROJECT_DIR$/backend.py" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/templates/addReview.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-5" />
+    <option name="y" value="27" />
+    <option name="width" value="1376" />
+    <option name="height" value="746" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BigCheese" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigCheese" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigCheese" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BigCheese" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="ToolWindowEvent Log.ShowToolbar" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/BigCheese.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/backend.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/css/Default.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/templates/about.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/templates/companyInput.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/templates/employer.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/templates/employers.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/templates/index.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/templates/login.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/templates/skeleton.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/templates/userProfile.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/Jinja2-2.10.dist-info/LICENSE.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/Jinja2-2.10.dist-info/RECORD</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/MarkupSafe-1.0-py3.6.egg-info/PKG-INFO</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/MarkupSafe-1.0-py3.6.egg-info/installed-files.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/Werkzeug-0.14.1.dist-info/RECORD</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/click-6.7.dist-info/RECORD</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/itsdangerous-0.24-py3.6.egg-info/PKG-INFO</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Lib/site-packages/itsdangerous-0.24-py3.6.egg-info/installed-files.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/Activate.ps1</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/activate</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/activate.bat</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/Scripts/deactivate.bat</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/venv/pyvenv.cfg</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/webResources.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/css/bootstrap-theme.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/css/bootstrap-theme.css.map</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/css/bootstrap-theme.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/css/bootstrap-theme.min.css.map</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/css/bootstrap.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/css/bootstrap.css.map</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/css/bootstrap.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/css/bootstrap.min.css.map</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/css/custom.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/js/bootstrap.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/js/bootstrap.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/js/npm.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/templates/Test.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/templates/addReview.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/templates/error.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/templates/signup.html</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BigCheese" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.app" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c5be41c1-a4ce-4a09-a18e-6e4f17fe0229" name="Default" comment="" />
+      <created>1522709489648</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1522709489648</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Baking Cookies">
+      <created>1523320227396</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1523320227396</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Cookies">
+      <created>1523320408361</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1523320408361</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Cookies">
+      <created>1523320527320</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1523320527320</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Cookies">
+      <created>1523320783346</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1523320783346</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Cookies">
+      <created>1523321046402</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1523321046402</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Cookies">
+      <created>1523321109379</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1523321109379</updated>
+    </task>
+    <task id="LOCAL-00070" summary="make test give me username">
+      <created>1523321443178</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1523321443178</updated>
+    </task>
+    <task id="LOCAL-00071" summary="make test give me username if logged in">
+      <created>1523321519994</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1523321519994</updated>
+    </task>
+    <task id="LOCAL-00072" summary="make test give me username if logged in">
+      <created>1523321578304</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1523321578304</updated>
+    </task>
+    <task id="LOCAL-00073" summary="make test give me username if logged in">
+      <created>1523321905929</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1523321905929</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Adding some signin block">
+      <created>1523322205715</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1523322205715</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Adding some more signin blocks">
+      <created>1523322355840</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1523322355840</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Changing redirect after company creation">
+      <created>1523328583273</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1523328583273</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Changing redirect after company creation">
+      <created>1523328803917</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1523328803917</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Changing redirect after company creation">
+      <created>1523329048308</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1523329048308</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Changing redirect after company creation">
+      <created>1523329178758</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1523329178758</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Changing redirect after company creation">
+      <created>1523329322212</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1523329322212</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Changing redirect after company creation">
+      <created>1523329474289</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1523329474289</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Changing redirect after company creation">
+      <created>1523329498329</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1523329498329</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Made addReview resistant to sql injection. Probably broke everything.">
+      <created>1523373552965</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1523373552965</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Fixed add review redirect">
+      <created>1523374139901</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1523374139901</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Fixed add review redirect">
+      <created>1523374472287</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1523374472287</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Hate IDEs, unclear if theres mismatched parens">
+      <created>1523374662653</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1523374662653</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Hate IDEs, unclear if theres mismatched parens">
+      <created>1523374832013</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1523374832013</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Troubleshooint is the worst">
+      <created>1523375037260</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1523375037260</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Troubleshooint is the worst">
+      <created>1523375802526</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1523375802526</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Troubleshooint is the worst">
+      <created>1523375856520</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1523375856520</updated>
+    </task>
+    <task id="LOCAL-00091" summary="Troubleshooint is the worst">
+      <created>1523375891591</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1523375891591</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Shifting return statements">
+      <created>1523379857697</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1523379857697</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Changing print to log">
+      <created>1523380717305</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1523380717305</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Fixing what I broke when I was trying to fix things">
+      <created>1523380942366</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1523380942366</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Fixing what I broke when I was trying to fix things">
+      <created>1523381898529</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1523381898529</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Fixing what I broke when I was trying to fix things">
+      <created>1523383793337</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1523383793337</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Fixing what I broke when I was trying to fix things">
+      <created>1523383915680</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1523383915680</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Fixing what I broke when I was trying to fix things">
+      <created>1523384111491</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1523384111491</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Fixing what I broke when I was trying to fix things">
+      <created>1523384210529</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1523384210529</updated>
+    </task>
+    <task id="LOCAL-00100" summary="Fixing what I broke when I was trying to fix things">
+      <created>1523384265731</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1523384265731</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Fixing what I broke when I was trying to fix things">
+      <created>1523384413519</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1523384413519</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Working on it">
+      <created>1523384591372</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1523384591372</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Fuck print statments">
+      <created>1523384680084</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1523384680084</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Fuck print statments">
+      <created>1523384785009</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1523384785009</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Fuck print statments">
+      <created>1523384844211</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1523384844211</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Fuck print statments">
+      <created>1523385343878</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1523385343878</updated>
+    </task>
+    <task id="LOCAL-00107" summary="Fuck print statments">
+      <created>1523385451792</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1523385451792</updated>
+    </task>
+    <task id="LOCAL-00108" summary="Fuck print statments">
+      <created>1523385657851</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1523385657851</updated>
+    </task>
+    <task id="LOCAL-00109" summary="Fuck print statments">
+      <created>1523385728560</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1523385728560</updated>
+    </task>
+    <task id="LOCAL-00110" summary="Fuck print statments">
+      <created>1523385856306</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1523385856306</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Fuck print statments">
+      <created>1523386014893</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1523386014893</updated>
+    </task>
+    <task id="LOCAL-00112" summary="Uncomment">
+      <created>1523386190579</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1523386190579</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-5" y="27" width="1376" height="746" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1244168" sideWeight="0.4172767" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.58272326" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16398244" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39968896" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30637637" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Okay, fixed the print statement" />
+    <MESSAGE value="Changing how the program responds to adding a user" />
+    <MESSAGE value="login functionality" />
+    <MESSAGE value="form fuckery" />
+    <MESSAGE value="Troubleshooting" />
+    <MESSAGE value="I think this may have done it. Corrected psql statement and fixed error.html" />
+    <MESSAGE value="Checking to see if I somehow added ',' to the email field" />
+    <MESSAGE value="Playing with my psql" />
+    <MESSAGE value="Baking Cookies" />
+    <MESSAGE value="Cookies" />
+    <MESSAGE value="make test give me username" />
+    <MESSAGE value="make test give me username if logged in" />
+    <MESSAGE value="Adding some signin block" />
+    <MESSAGE value="Adding some more signin blocks" />
+    <MESSAGE value="Changing redirect after company creation" />
+    <MESSAGE value="Made addReview resistant to sql injection. Probably broke everything." />
+    <MESSAGE value="Fixed add review redirect" />
+    <MESSAGE value="Hate IDEs, unclear if theres mismatched parens" />
+    <MESSAGE value="Troubleshooint is the worst" />
+    <MESSAGE value="Shifting return statements" />
+    <MESSAGE value="Changing print to log" />
+    <MESSAGE value="Fixing what I broke when I was trying to fix things" />
+    <MESSAGE value="Working on it" />
+    <MESSAGE value="Fuck print statments" />
+    <MESSAGE value="Uncomment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uncomment" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="47" lean-forward="false" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/employers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="56" lean-forward="false" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <marker date="1523386010762" expanded="true" signature="298:319" ph="SELECT * FRO... company" />
+            <marker date="1523386010762" expanded="true" signature="662:701" ph="SELECT * FRO... company" />
+            <marker date="1523386010762" expanded="true" signature="1073:1126" ph="SELECT EXIST... " />
+            <marker date="1523386010762" expanded="true" signature="1088:1125" ph="SELECT 1 FRO... COMPANY" />
+            <marker date="1523386010762" expanded="true" signature="1353:1420" ph="INSERT INTO COMPANY... " />
+            <marker date="1523386010762" expanded="true" signature="1846:1912" ph="INSERT INTO REVIEW... " />
+            <marker date="1523386010762" expanded="true" signature="2236:2295" ph="UPDATE COMPANY... " />
+            <marker date="1523386010762" expanded="true" signature="2627:2666" ph="SELECT * FRO... REVIEW" />
+            <marker date="1523386010762" expanded="true" signature="2981:3036" ph="SELECT EXIST... " />
+            <marker date="1523386010762" expanded="true" signature="2996:3035" ph="SELECT 1 FRO... COMPANY" />
+            <marker date="1523386010762" expanded="true" signature="3267:3334" ph="INSERT INTO COMPANY... " />
+            <marker date="1523386010762" expanded="true" signature="3615:3654" ph="SELECT * FRO... REVIEW" />
+            <marker date="1523386010762" expanded="true" signature="3969:4023" ph="SELECT EXIST... " />
+            <marker date="1523386010762" expanded="true" signature="3984:4022" ph="SELECT 1 FRO... USERS" />
+            <marker date="1523386010762" expanded="true" signature="4184:4287" ph="INSERT INTO USERS... " />
+            <marker date="1523386010762" expanded="true" signature="4663:4717" ph="SELECT EXIST... " />
+            <marker date="1523386010762" expanded="true" signature="4678:4716" ph="SELECT 1 FRO... USERS" />
+            <marker date="1523386010762" expanded="true" signature="4916:4957" ph="SELECT PASS USERS" />
+            <marker date="1523386010762" expanded="true" signature="5486:5528" ph="SELECT UNAME... USERS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/companyInput.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/companyInput.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <marker date="1523386010762" expanded="true" signature="298:319" ph="SELECT * FRO... company" />
+            <marker date="1523386010762" expanded="true" signature="662:701" ph="SELECT * FRO... company" />
+            <marker date="1523386010762" expanded="true" signature="1073:1126" ph="SELECT EXIST... " />
+            <marker date="1523386010762" expanded="true" signature="1088:1125" ph="SELECT 1 FRO... COMPANY" />
+            <marker date="1523386010762" expanded="true" signature="1353:1420" ph="INSERT INTO COMPANY... " />
+            <marker date="1523386010762" expanded="true" signature="1846:1912" ph="INSERT INTO REVIEW... " />
+            <marker date="1523386010762" expanded="true" signature="2236:2295" ph="UPDATE COMPANY... " />
+            <marker date="1523386010762" expanded="true" signature="2627:2666" ph="SELECT * FRO... REVIEW" />
+            <marker date="1523386010762" expanded="true" signature="2981:3036" ph="SELECT EXIST... " />
+            <marker date="1523386010762" expanded="true" signature="2996:3035" ph="SELECT 1 FRO... COMPANY" />
+            <marker date="1523386010762" expanded="true" signature="3267:3334" ph="INSERT INTO COMPANY... " />
+            <marker date="1523386010762" expanded="true" signature="3615:3654" ph="SELECT * FRO... REVIEW" />
+            <marker date="1523386010762" expanded="true" signature="3969:4023" ph="SELECT EXIST... " />
+            <marker date="1523386010762" expanded="true" signature="3984:4022" ph="SELECT 1 FRO... USERS" />
+            <marker date="1523386010762" expanded="true" signature="4184:4287" ph="INSERT INTO USERS... " />
+            <marker date="1523386010762" expanded="true" signature="4663:4717" ph="SELECT EXIST... " />
+            <marker date="1523386010762" expanded="true" signature="4678:4716" ph="SELECT 1 FRO... USERS" />
+            <marker date="1523386010762" expanded="true" signature="4916:4957" ph="SELECT PASS USERS" />
+            <marker date="1523386010762" expanded="true" signature="5486:5528" ph="SELECT UNAME... USERS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/socketserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="466" column="0" lean-forward="false" selection-start-line="466" selection-start-column="0" selection-end-line="466" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/companyInput.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="109" lean-forward="false" selection-start-line="4" selection-start-column="109" selection-end-line="4" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="61" column="101" lean-forward="false" selection-start-line="61" selection-start-column="101" selection-end-line="61" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/employers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="56" column="4" lean-forward="false" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
+          <folding>
+            <marker date="1523386010762" expanded="true" signature="298:319" ph="SELECT * FRO... company" />
+            <marker date="1523386010762" expanded="true" signature="662:701" ph="SELECT * FRO... company" />
+            <marker date="1523386010762" expanded="true" signature="1073:1126" ph="SELECT EXIST... " />
+            <marker date="1523386010762" expanded="true" signature="1088:1125" ph="SELECT 1 FRO... COMPANY" />
+            <marker date="1523386010762" expanded="true" signature="1353:1420" ph="INSERT INTO COMPANY... " />
+            <marker date="1523386010762" expanded="true" signature="1846:1912" ph="INSERT INTO REVIEW... " />
+            <marker date="1523386010762" expanded="true" signature="2236:2295" ph="UPDATE COMPANY... " />
+            <marker date="1523386010762" expanded="true" signature="2627:2666" ph="SELECT * FRO... REVIEW" />
+            <marker date="1523386010762" expanded="true" signature="2981:3036" ph="SELECT EXIST... " />
+            <marker date="1523386010762" expanded="true" signature="2996:3035" ph="SELECT 1 FRO... COMPANY" />
+            <marker date="1523386010762" expanded="true" signature="3267:3334" ph="INSERT INTO COMPANY... " />
+            <marker date="1523386010762" expanded="true" signature="3615:3654" ph="SELECT * FRO... REVIEW" />
+            <marker date="1523386010762" expanded="true" signature="3969:4023" ph="SELECT EXIST... " />
+            <marker date="1523386010762" expanded="true" signature="3984:4022" ph="SELECT 1 FRO... USERS" />
+            <marker date="1523386010762" expanded="true" signature="4184:4287" ph="INSERT INTO USERS... " />
+            <marker date="1523386010762" expanded="true" signature="4663:4717" ph="SELECT EXIST... " />
+            <marker date="1523386010762" expanded="true" signature="4678:4716" ph="SELECT 1 FRO... USERS" />
+            <marker date="1523386010762" expanded="true" signature="4916:4957" ph="SELECT PASS USERS" />
+            <marker date="1523386010762" expanded="true" signature="5486:5528" ph="SELECT UNAME... USERS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/userProfile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="100" lean-forward="false" selection-start-line="5" selection-start-column="100" selection-end-line="5" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/addReview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="102" lean-forward="false" selection-start-line="3" selection-start-column="102" selection-end-line="3" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

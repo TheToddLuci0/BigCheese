@@ -29,7 +29,9 @@ class User(UserMixin):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    resp = render_template('index.html')
+    resp.set_cookie('FLAG', 'cdc{chocolateChip}')
+    return resp
 
 
 @app.route('/employer/<name>', methods=['POST', 'GET'])
