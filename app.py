@@ -30,7 +30,7 @@ class User(UserMixin):
 @app.route('/')
 def index():
     resp = render_template('index.html')
-    resp.set_cookie('FLAG', 'cdc{chocolateChip}')
+#    resp.set_cookie('FLAG', 'cdc{chocolateChip}')
     return resp
 
 
