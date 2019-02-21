@@ -1,13 +1,9 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, make_response
-from flask_login import (LoginManager, current_user, login_required,
-                            login_user, logout_user, UserMixin,
-                            confirm_login, fresh_login_required)
-from flask_sqlalchemy import SQLAlchemy
-import backend
+from flask import Flask, render_template, request, redirect, make_response
 from flask_bootstrap import Bootstrap
-import logging
+from flask_login import (UserMixin)
+from flask_sqlalchemy import SQLAlchemy
 
-
+import backend
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -29,8 +25,8 @@ class User(UserMixin):
 
 @app.route('/')
 def index():
-#    resp = render_template('index.html')
-#    resp.set_cookie('FLAG', 'cdc{chocolateChip}')
+    #    resp = render_template('index.html')
+    #    resp.set_cookie('FLAG', 'cdc{chocolateChip}')
     return render_template('index.html')
 
 
@@ -42,7 +38,7 @@ def employer(name):
             backend.addReview(result['Name'], result['Review'], int(result['Score']), request.cookies.get('username'))
             return render_template('employers.html', result=backend.getCompany())
             # return redirect("http://www.bigcheese.review/employers")#.format(result['Name']))
-        #return redirect("http://www.bigcheese.review/employers")
+        # return redirect("http://www.bigcheese.review/employers")
         return render_template('employer.html', name=name, reviews=backend.getReviews(name))
     else:
         return render_template('login.html')
@@ -61,14 +57,14 @@ def employers():
     if request.method == 'POST':
 
         if request.cookies.get('loggedIn'):
-            #print("got your shit")
+            # print("got your shit")
             result = request.form
-            #print(result)
+            # print(result)
             success = backend.addCompany(result['Name'], result['About'])
             if success:
                 where = "http://www.bigcheese.review/employer/{}".format(result['Name'])
                 return redirect(where)
-#                return render_template('employer.html', result=backend.getCompany())
+            #                return render_template('employer.html', result=backend.getCompany())
             else:
                 return render_template('error.html', name=result['Name'])
         else:
@@ -80,8 +76,9 @@ def employers():
 def user():
     if request.method == 'POST':
         result = request.form
-        #print(result)
-        success = backend.addUser(result['display_name'], result['password'], result['email'], result['first_name'], result['last_name'])
+        # print(result)
+        success = backend.addUser(result['display_name'], result['password'], result['email'], result['first_name'],
+                                  result['last_name'])
         if success:
             return render_template('userProfile.html', username=result['display_name'])
         else:
@@ -95,8 +92,9 @@ def user():
 def profile(display_name):
     if request.method == 'POST':
         result = request.form
-        #print(result)
-        success = backend.addUser(result['display_name'], result['password'], result['email'], result['first_name'], result['last_name'])
+        # print(result)
+        success = backend.addUser(result['display_name'], result['password'], result['email'], result['first_name'],
+                                  result['last_name'])
         if success:
             return render_template('userProfile.html', username=username)
         else:
@@ -105,21 +103,21 @@ def profile(display_name):
 
 @app.route('/check/', methods=['POST', 'GET'])
 def checkPassword():
-    #print("Are you here?")
+    # print("Are you here?")
     if request.method == 'POST':
         result = request.form
-        #print(result)
+        # print(result)
         success = backend.checkPassword(result['email'], result['password'])
         if success:
-            #print(result['email'])
+            # print(result['email'])
             username = backend.userForEmail(result['email'])
-            #print(username)
-            #print("It is true")
+            # print(username)
+            # print("It is true")
             resp = make_response(render_template('userProfile.html', username=username))
             resp.set_cookie('loggedIn', 'True')
             resp.set_cookie('username', username)
-            #print(request.cookies.get('username'))
-            #print(request.cookies.get('loggedIn'))
+            # print(request.cookies.get('username'))
+            # print(request.cookies.get('loggedIn'))
 
             return resp
         else:
@@ -160,9 +158,9 @@ def displayCompany():
     if request.method == 'POST':
 
         if request.cookies.get('loggedIn'):
-            #print("got your shit")
+            # print("got your shit")
             result = request.form
-            #print(result)
+            # print(result)
             backend.addCompany(result['Name'], result['About'])
             return " ".join(str(x) for x in backend.getCompany())
         else:
